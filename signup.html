@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title>Sign up today?</title>
+		
+		<style type="text/css">
+			body{
+				background-color: #666699;
+			}
+
+			h1{
+				color: white;
+				font-size: 100px;
+				text-align: center;
+				padding: 0px;
+				margin: 100px 20px 20px 20px;
+			}
+
+			h2{
+				text-align: center;
+				font-size: 80px;
+				padding: 0px;
+				margin: 10px;
+			}
+
+			a:link{
+				color: #75FF75;
+				text-decoration: none;
+			}
+
+			a:hover{
+				text-decoration: underline;
+			}
+
+			a:visited{
+				color: #75FF75;
+			}
+		</style>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		
+		<script type="text/javascript">
+			var whenReady = function (){
+				$("h2").hide().show(12000);
+				$("h1").hide(500).show(500).hide(500).show(500).hide(500).show(500).hide(500).show(500).hide(500).show(500);
+			};
+
+			$(document).ready(whenReady);
+		</script>
+	</head>
+	
+	<body>
+		<h1>You don't get to sign up!</h1>
+
+		<h2><a href="smlp.html">Go back</a> 
+	</body>
+
+</html>
