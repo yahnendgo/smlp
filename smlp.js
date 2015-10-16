@@ -1,8 +1,7 @@
 var whenReady = function (){
 
-	$("form, #quest").hide();
+	$("form, #quest, #rejected").hide();
 	$(".button").hover(function(){
-		console.log("hide");
 		$("#login").hide();
 	}, function(){
 		$("#login").show();
@@ -10,14 +9,14 @@ var whenReady = function (){
 
 
 function submit(){
-	console.log("submit");
 	var password=document.getElementById("ptext").value;
 	var username=document.getElementById("text").value;
 	if (password == "WeRuleTheWorld!!!"){
 		console.log(username);
 		return false;
 	} else {
-		console.log("else");
+		$("#rejected").show();
+		$('#fuckery').hide(500).show(500).hide(500).show(500).hide(500).show(500).hide(500).show(500).hide(500).show(500);
 		return false;
 	}
 	return false;
@@ -35,10 +34,9 @@ function submit(){
 	$("#login-form").submit(submit)
 
 
-}
 	$("body").click(function() {
 		$("form, #quest").slideDown(3000);
-	})
-};
 
+	});
+}
 $(document).ready(whenReady);
